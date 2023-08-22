@@ -14,10 +14,16 @@
         margin-top: $mt;
     }
     img {
-        width: 100%;
+        width: 85%;
         height: auto;
         margin: $space-default auto;
     }
+
+    .logo{
+        width: 120px;
+        height: auto;
+    }
+
     p {
         font-size: $font-normal;
         color: $color-01;
