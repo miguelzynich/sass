@@ -1,12 +1,32 @@
-.cars {
-    h2 {
-        color: $color-02;
-    }
-    li {
-        color: $color-04;
+@import 'blocks';
+@mixin theme($theme: $color-02, $bg: $color-04 ){
+    border: 1px solid $theme;
+    background-color: $bg;
 
-        a {
-            background-color: $color-default;
+
+}
+
+.cars {
+       &__title {
+        color: $color-03;
+    }
+
+    
+        @include theme;
+    
+   
+    &__item {
+        @include theme($theme: #050000, $bg: #f9f9f9);
+        color: $color-03;
+        display: block;
+        flex-direction: row;
+        align-items: center;
+        width: 30%;
+        flex-flow: row;
+        
+        
+        &__destack {
+            background-color: $color-01;
         }
     }
 }
