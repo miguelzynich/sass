@@ -17,6 +17,7 @@
         width: 100%;
         height: auto;
         margin: $space-default auto;
+        object-fit: cover;
     }
     .destack__logo img {
         max-width: 200px !important;
